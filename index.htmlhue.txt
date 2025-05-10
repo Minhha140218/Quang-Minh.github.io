@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu về Huế</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Giới thiệu về Huế</h1>
+    <p>Huế - Thành phố của những di sản văn hóa và vẻ đẹp bình yên.</p>
+  </header>
+
+  <section class="content">
+    <h2>Thông tin tổng quan</h2>
+    <p>Huế là một thành phố nằm ở miền Trung Việt Nam, nổi tiếng với các di tích lịch sử, văn hóa và cảnh quan thiên nhiên tuyệt đẹp.</p>
+  </section>
+
+  <section class="attractions">
+    <h2>Địa điểm nổi bật</h2>
+    <ul>
+      <li>Đại Nội Huế</li>
+      <li>Chùa Thiên Mụ</li>
+      <li>Sông Hương</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Quang Minh</p>
+  </footer>
+</body>
+</html>
