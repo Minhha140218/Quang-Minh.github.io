@@ -110,8 +110,12 @@
 </header>
 
 <section class="hero" data-aos="fade-up">
-  <h2>Chào mừng đến trang cá nhân của tôi</h2>
-  <p>Tôi là một nhà phát triển web đam mê công nghệ và sáng tạo.</p>
+  <h2>Thừa Thiên Huế là một tỉnh nằm ở vùng duyên hải Bắc Trung Bộ, có đường biên giới với nước bạn Lào. Trong đó: 
+Phía Bắc: giáp tỉnh Quảng Trị
+Phía Nam: giáp Đà Nẵng
+Phía Tây Nam: giáp tỉnh Quảng Nam
+Phía đông: giáp biểnNgười Huế nhẹ nhàng, dễ thương pha chút nét kín đáo, e ấp cùng giọng nói dễ khiến người ta say. Tất cả đều tạo nên một vẻ đẹp khó diễn giải  làm si mê không biết bao nhiêu người. Đây cũng chính là một trong những nét văn hóa được lòng rất nhiều du khách thập phương khi đặt chân đến mảnh đất này</h2>
+  <p>Ẩm thực Huế: Bánh bột lọc, Bún bò Huế, Cơm Hến, Mè xửng Huế.</p>
 </section>
 
 <section id="about" data-aos="fade-right">
