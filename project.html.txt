@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dự án cá nhân của Quang Minh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dự án cá nhân của Quang Minh</h1>
+    <p>Giới thiệu về một trong những dự án của tôi.</p>
+  </header>
+
+  <section class="project-content">
+    <h2>Tên dự án</h2>
+    <p>Đây là một dự án mà tôi đã thực hiện để phát triển kỹ năng lập trình web.</p>
+    <p>Chi tiết dự án: [Mô tả, hình ảnh, liên kết đến GitHub hoặc demo nếu có]</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Quang Minh</p>
+  </footer>
+</body>
+</html>
