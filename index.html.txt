@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang Cá Nhân</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .hero {
+      background: #4a90e2;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 600px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tôi là [Tên của bạn]</h1>
+  <nav>
+    <a href="#about">Giới thiệu</a>
+    <a href="#projects">Dự án</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+</header>
+
+<section class="hero" data-aos="fade-up">
+  <h2>Chào mừng đến trang cá nhân của tôi</h2>
+  <p>Tôi là một nhà phát triển web đam mê công nghệ và sáng tạo.</p>
+</section>
+
+<section id="about" data-aos="fade-right">
+  <h2>Giới thiệu</h2>
+  <p>Tôi có kinh nghiệm trong HTML, CSS, JavaScript và xây dựng trang web chuyên nghiệp.</p>
+</section>
+
+<section id="projects" data-aos="fade-left">
+  <h2>Dự án</h2>
+  <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide"><img src="https://via.placeholder.com/600x300?text=Dự+án+1" alt="Dự án 1"></div>
+      <div class="slide"><img src="https://via.placeholder.com/600x300?text=Dự+án+2" alt="Dự án 2"></div>
+      <div class="slide"><img src="https://via.placeholder.com/600x300?text=Dự+án+3" alt="Dự án 3"></div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <h2>Liên hệ</h2>
+  <p>Email: ban@example.com</p>
+</section>
+
+<footer>
+  © 2025 Tên của bạn. All rights reserved.
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Carousel Script -->
+<script>
+  const slides = document.getElementById("slides");
+  const dotsContainer = document.getElementById("dots");
+  const totalSlides = slides.children.length;
+  let index = 0;
+
+  // Tạo dot cho từng slide
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement("span");
+    dot.classList.add("dot");
+    dot.addEventListener("click", () => {
+      index = i;
+      updateCarousel();
+    });
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = document.querySelectorAll(".dot");
+
+  function updateCarousel() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
+
+  function autoSlide() {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  updateCarousel();
+  setInterval(autoSlide, 3000);
+</script>
+
+</body>
+</html>
